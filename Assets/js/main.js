@@ -27,14 +27,15 @@ if (isNaN(cognome)) {
 //
 // console.log(listaCognomi);
 
-// Metodo swapping
+
+var ordine = 0
 
 for (var j = 0; j < listaCognomi.length; j++) {
-    for (var i = 0, swapping; i < listaCognomi.length; i++) {
+    for (var i = 0; i < listaCognomi.length; i++) {
       if (listaCognomi[i]> listaCognomi[i + 1]) {
-        swapping = listaCognomi[i + 1];
+        ordine = listaCognomi[i + 1];
         listaCognomi[i + 1] = listaCognomi[i];
-        listaCognomi[i] = swapping;
+        listaCognomi[i] = ordine;
         };
     };
 };

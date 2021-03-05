@@ -40,13 +40,13 @@ for (var j = 0; j < listaCognomi.length; j++) {
     };
 };
 
-console.log(listaCognomi);
+// console.log(listaCognomi);
+for (var i = 0; i < listaCognomi.length; i++) {
+  document.getElementById('lista').innerHTML += "<li>" + listaCognomi[i] + "</li>"
+  // Stampo la posizione esatta della variabile cognome dopo aver ordinato
+  // alfabeticamente la lista
+  if(listaCognomi[i] == cognome){
+     console.log(i+1);
+  }
 
-// Stampo la posizione esatta della variabile cognome dopo aver ordinato
-// alfabeticamente la lista
-
-for(var i=0; i < listaCognomi.length; i++){
-    if(listaCognomi[i] == cognome){
-       console.log(i);
-    }
 }

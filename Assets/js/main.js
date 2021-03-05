@@ -28,12 +28,12 @@ if (isNaN(cognome)) {
 // console.log(listaCognomi);
 
 
-var ordine = 0
 
-for (var j = 0; j < listaCognomi.length; j++) {
-    for (var i = 0; i < listaCognomi.length; i++) {
+
+for (var j = 0; j < listaCognomi.length - 1; j++) {
+    for (var i = 0; i < listaCognomi.length - 1; i++) {
       if (listaCognomi[i]> listaCognomi[i + 1]) {
-        ordine = listaCognomi[i + 1];
+        var ordine = listaCognomi[i + 1];
         listaCognomi[i + 1] = listaCognomi[i];
         listaCognomi[i] = ordine;
         };
